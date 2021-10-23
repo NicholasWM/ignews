@@ -28,7 +28,6 @@ describe('Home page', ()=>{
                 unit_amount: 1000
             } as any)
         const response = await getStaticProps({})
-        console.log(response);
         expect(response).toEqual(
             expect.objectContaining({
                 props:{

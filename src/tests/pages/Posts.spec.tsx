@@ -37,14 +37,12 @@ describe('Home page', ()=>{
                                 {type: 'paragraph', text: posts[0].excerpt},
                             ],
                         },
-                        last_publication_date: '04-01-2021'
+                        last_publication_date: '04-10-2021'
                     },
                 ]
             })
         } as any)
         const response = await getStaticProps({})
-        console.log(response);
-        
         expect(response).toEqual(
             expect.objectContaining({
                 props:{
